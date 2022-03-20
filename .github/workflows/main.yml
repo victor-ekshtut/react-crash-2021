@@ -24,7 +24,7 @@ jobs:
       #    cmd: test -- --coverage --watchAll=false # will run `yarn test` command
           
       - name: Run tests 
-        run: test -- --coverage --watchAll=false
+        run: yarn test -- --coverage --watchAll=false
           
       #- name: Run tests 
       #  run: ./npm run test -- --coverage --watchAll=false
