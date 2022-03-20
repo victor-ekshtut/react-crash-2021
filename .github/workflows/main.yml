@@ -19,12 +19,14 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: test -- --coverage --watchAll=false # will run `yarn test` command
+      #- uses: borales/actions-yarn@v2.3.0
+      #  with:
+      #    cmd: test -- --coverage --watchAll=false # will run `yarn test` command
           
+      - name: Run tests 
+        run: test -- --coverage --watchAll=false
           
-      #- name: Run tests
+      #- name: Run tests 
       #  run: ./npm run test -- --coverage --watchAll=false
       
       - name: SonarCloud Scan
