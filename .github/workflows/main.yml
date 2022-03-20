@@ -22,8 +22,9 @@ jobs:
       #- uses: borales/actions-yarn@v2.3.0
       #  with:
       #    cmd: test -- --coverage --watchAll=false # will run `yarn test` command
-          
-      - name: Run tests 
+      - name: Run yarn install
+        run: yarn install
+      - name: Run yarn test with coverage
         run: yarn test -- --coverage --watchAll=false
       
       #- name: SonarCloud Scan
