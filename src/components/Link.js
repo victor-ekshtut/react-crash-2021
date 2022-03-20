@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 const STATUS = {
     HOVERED: 'hovered',
     NORMAL: 'normal',
+    HIDDEN: 'hidden',
   };
 
   const Link = ({page, children}) => {
