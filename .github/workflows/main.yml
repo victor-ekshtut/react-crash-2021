@@ -21,7 +21,7 @@ jobs:
       #    cmd: build # will run `yarn build` command
       #- uses: borales/actions-yarn@v2.3.0
       #  with:
-      #    cmd: test -- --coverage --watchAll=false # will run `yarn test` command
+      #    cmd: test -- --coverage --watchAll=false # will run `yarn test` command 
       - name: Run yarn install
         run: yarn install
       - name: Run yarn test with coverage
